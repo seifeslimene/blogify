@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap');
+
+body {
+  // --aside-width: 300px !important;
+  --aside-padding-horizontal: 16px;
+  --primary-color: #4299e1;
+  --link-color: #4299e1;
+  --border-radius: 4px;
+
+  // bright color theme
+  --bg: #ffffff;
+  --bg-second: #ffffff;
+  --rgb-bg-second: 255, 255, 255;
+  --bg-body: #e7eaee;
+  --bg-footer: #292525;
+  --bg-code: #f8f8f8;
+  --blockquote-color: #ffffff;
+  --main-text-color: rgba(0, 0, 0, 0.85);
+  --second-text-color: rgba(0, 0, 0, 0.65);
+  --disable-text-color: rgba(0, 0, 0, 0.35);
+  --border-color: rgba(178, 186, 194, 0.15);
+  --box-shadow: 0 1px 3px rgb(18 18 18 / 10%);
+  --scrollbar-bg: #dadada;
+  --comment-editor-border-color: #d9d9d9; // Editor border color used for comment box
+  --comment-editor-btn-disable-bg: #f5f5f5; // Disable the background color of the editor button used in the comment box
+
+  img {
+    opacity: 1;
+  }
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body.dark {
+  // dark theme
+  --bg: #282c35;
+  --bg-second: #363c48;
+  --rgb-bg-second: 54, 60, 72;
+  --bg-body: var(--bg);
+  --bg-footer: var(--bg);
+  --bg-code: rgba(115, 124, 153, 0.2);
+  --blockquote-color: #ffffff;
+  --main-text-color: rgba(255, 255, 255, 0.85);
+  --second-text-color: rgba(255, 255, 255, 0.65);
+  --disable-text-color: rgba(255, 255, 255, 0.45);
+  --border-color: rgba(255, 255, 255, 0.2);
+  --box-shadow: 0 2px 15px 0 rgba(26, 26, 27, 0.637);
+  --scrollbar-bg: var(--bg-second);
+  --comment-editor-border-color: var(--border-color);
+  --comment-editor-btn-disable-bg: var(--border-color); // Disable the background color of the editor button used in the comment box
+
+  img {
+    Opacity: 0.75;
+    transition: opacity 0.5s ease-in-out;
+  }
+}
+
+.ant-dropdown-trigger {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
