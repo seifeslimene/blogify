@@ -18,7 +18,7 @@ export class UserService {
     this.createUser({ name, password, role: 'admin' })
       .then(() => {
         console.log(
-          `[Blogify] Administrator Account Was Created Successfully, Username: ${name}, Password: ${password}, Please Log In To The System In Time To Change The Default Password`
+          `[Blogify] Administrator account was created. Username: ${name}. Change the password after the first login.`
         );
       })
       .catch(async () => {
@@ -26,7 +26,7 @@ export class UserService {
         const isDefaultPasswd = User.comparePassword(password, existAdminUser.password);
         if (isDefaultPasswd) {
           console.log(
-            `[Blogify] The Administrator Account Already Exists, Username: ${name}, Password: ${password}, Please Log In To The System In Time To Change The Default Password`
+            `[Blogify] Administrator account already exists. Username: ${name}. Change the password after login.`
           );
         }
       });
