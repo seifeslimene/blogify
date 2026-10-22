@@ -40,7 +40,7 @@ async function bootstrap() {
     .build();
   const document = SwaggerModule.createDocument(app, swaggerConfig);
   SwaggerModule.setup('api', app, document);
-  await app.listen(app.get('ConfigService').get('SERVER_PORT', 3003));
+  await app.listen(app.get('ConfigService').get('SERVER_PORT', 3015), '127.0.0.1');
   console.log('[Blogify] Service Started Successfully');
 }
 
